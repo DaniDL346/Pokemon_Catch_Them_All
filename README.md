@@ -1,17 +1,40 @@
 
 # Pokemon Catch Them All!
 
-**Pokemon Catch Them All!** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Pokemon Catch Them All!** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation of a Pokemon tournament between two players with various types of Pokemon. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img src="https://static.wikia.nocookie.net/pokemon/images/0/01/0175Togepi.png" width="100" height="100" /> 
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* The Kaggle dataset called \"Pokemon with stats\" and \"Pokemon- Weedle's Cave\", was used as raw data and saved under the "/Dataset/raw" folder under, [\"Pokemon with Stats\" for \"pokemon\"]( https://www.kaggle.com/datasets/abcsds/pokemon/data) and [\"Pokemon- Weedle's Cave\" for \"combats\"]( https://www.kaggle.com/datasets/terminus7/pokemon-challenge?select=pokemon.csv).
+* The size of the raw files are 581KB for "combats.csv" and 44KB for "pokemon.csv".
+* The column names are as follows:
+    * \#: ID for each pokemon
+    * Name: Name of each pokemon
+    * Type 1: Each pokemon has a type, this determines weakness/resistance to attacks
+    * Type 2: Some pokemon are dual type and have 2
+    * Total: Sum of all stats that come after this, a general guide to how strong a pokemon is
+    * HP: Hit points, or health, defines how much damage a pokemon can withstand before fainting
+    * Attack: The base modifier for normal attacks (e.g. Scratch, Punch)
+    * Defense: The base damage resistance against normal attacks
+    * SP Atk: Special attack, the base modifier for special attacks (e.g. fire blast, bubble beam)
+    * SP Def: The base damage resistance against special attacks
+    * Speed: Determines which pokemon attacks first each round
+
+
+       
 
 
 ## Business Requirements
-* Describe your business requirements
+The business requirements for this project are:
+
+1. **Determine the Strongest Pokemon:** Identify which Pokemon have the highest overall stats and are most likely to win in tournament battles.
+2. **Analyze Type Effectiveness:** Explore how different Pokemon types (Type 1 and Type 2) influence battle outcomes and identify any type advantages.
+3. **Player Performance Comparison:** Compare the performance of the two players in the tournament based on their chosen Pokemon and battle results.
+4. **Visualize Key Stats:** Provide clear visualizations of important attributes such as HP, Attack, Defense, Speed, and their impact on battle outcomes.
+5. **Predict Battle Outcomes:** Use the dataset to build simple predictive models or rules to forecast the winner of a match based on Pokemon stats and types.
+6. **User-Friendly Insights:** Present findings in a way that is accessible to both technical and non-technical users, supporting decision-making for future tournaments.
 
 
 ## Hypothesis and how to validate?
