@@ -54,6 +54,12 @@ The business requirements for this project are:
 2. **Analyze Type Effectiveness:** Explore how different Pokemon types influence battle outcomes and identify any type advantages.
     * Investigations were conducted in the Pokemon Power BI Dashboard highlighting Player 1(Type 1) vs Player 2(Type 1) advantages over the other as well as their strategies. You will find this in page 2 under "Player strategy" and page 3 and 4 under "Player 1 Statistics" and "Player 2 Statistics".
 
+    ![Dashboard page 2](static_images/Dashboard_page2.jpeg) 
+
+    ![Dashboard page 3](static_images/Dashboard_page3.jpeg)  
+
+    ![Dashboard page 4](static_images/Dashboard_page4.jpeg)
+
 3. **Player Performance Comparison:** Compare the performance of the two players in the tournament based on their chosen Pokemon and battle results.
 4. **Visualize Key Stats:** Provide clear visualizations of important attributes such as HP, Attack, Defense, Speed, and their impact on battle outcomes.
 5. **Predict Battle Outcomes:** Use the dataset to build simple predictive models or rules to forecast the winner of a match based on Pokemon stats and types.
