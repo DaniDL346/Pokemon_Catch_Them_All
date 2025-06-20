@@ -119,7 +119,54 @@ The business requirements for this project are:
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
+
+    Ethical, Bias, Social & Legal Considerations in a Pokémon Tournament Dataset
+    1. Bias & Fairness
+    Even synthetic datasets like yours can reinforce or reflect biases when used for prediction or classification.  
+
+        Possible Biases:
+        * Game Design Bias: The dataset is shaped by game mechanics — some Pokémon types or stats (e.g., Speed, Attack) are inherently favored.
+
+        * Overrepresentation: Certain types (e.g., Fire, Dragon) may appear more often, skewing models to favor those.
+
+        * Feature Selection Bias: If your model prioritizes only total stats, it may ignore strategic factors like type matchups or held items.
+
+        Why it matters: Training models on biased game outcomes could reinforce unfair advantages and limit diversity in team selection or competitive balancing.
+
+    2. Ethical Use of AI/ML
+    While the dataset is from a game, applying models to predict winners, build bots, or automate team selection can raise broader concerns.
+
+        * Automation of Strategy: Reduces human skill in competitive gaming — is it still a fair competition?
+
+        * Unfair Advantage: Players using ML-backed strategies may have a technological edge not accessible to others.
+
+        * AI-generated teams: Could diminish creativity and originality in player decision-making.
+
+        Guideline: Be transparent about when and how machine learning is used in tournaments.
+
 * How did you overcome any legal or societal issues?
+
+    * Social Implications
+
+        Though fictional, how AI models are used in games can shape behavior, competition, and community norms.
+
+        * Exclusion: Models trained on top-tier data might exclude lower-tier Pokémon or players, reinforcing elitism in competitive spaces.
+        * Transparency: Predictive tools that are not explained can alienate players.
+        * Impact on Learning: Over-reliance on “optimal” predictions may discourage experimentation and exploration by new players.
+
+    * Data Governance
+
+        Even game data should be managed responsibly, especially when shared or used for training models.
+        * Data Provenance: Is the battle data from real users? If so, did they consent?
+        * Versioning: Are the game mechanics consistent (e.g., Generation VI vs. VIII)? Changes affect model validity.
+        * Data Ownership: Pokémon data is IP owned by Nintendo/Game Freak — republishing large portions could violate rights.
+
+    * Legal Considerations
+
+        Pokémon is a trademarked and copyrighted IP, and using its data must comply with its usage policies.
+        * Fair Use / Educational Use: If you're using the dataset for academic or hobby projects, it may fall under fair use, but commercial use is risky.
+        * Reproducing Artwork, Names, or Lore: Including these in public datasets or models may violate terms of use.
+        * Data Sharing: If your dataset includes scraped or user-derived battle logs, be cautious with GDPR or platform-specific policies (e.g., Pokémon Showdown, Smogon).
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
