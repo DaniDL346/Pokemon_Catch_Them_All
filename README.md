@@ -201,44 +201,88 @@ The business requirements for this project are:
 
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
+    * How to combine two tables using left joins. I had to read up on how to do it and do research.
+    * "venv" file, I asked Emma and Niel for assistence
 * What new skills or tools do you plan to learn next based on your project experience? 
+    * Train a Machine Learning model using images with CNN
 
 ## Deployment
-### Heroku
+### Power BI
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+* The Pokemon Dashboard was published under this [link]( https://app.powerbi.com/groups/me/reports/65e2aef0-ec38-434c-adb5-beda3f888e18/72c46320007eaa1686e4?experience=power-bi) called Pokemon Dashboard onto the Power BI workspace website.
 
 
 ## Main Data Analysis Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+    * **pandas**  
+        Used for data manipulation and analysis, such as loading CSV files and merging datasets.
+        ```python
+        import pandas as pd
+        pokemon = pd.read_csv('Dataset/raw/pokemon.csv')
+        combats = pd.read_csv('Dataset/raw/combats.csv')
+        combined = pd.merge(combats, pokemon, left_on='First_pokemon', right_on='#', how='left')
+        ```
 
+    * **numpy**  
+        Used for numerical operations and handling arrays.
+        ```python
+        import numpy as np
+        stats_mean = np.mean(pokemon['Total'])
+        ```
+
+    * **matplotlib**  
+        Used for creating static visualizations.
+        ```python
+        import matplotlib.pyplot as plt
+        plt.hist(pokemon['HP'])
+        plt.title('Distribution of HP')
+        plt.show()
+        ```
+
+    * **seaborn**  
+        Used for statistical data visualization, such as correlation matrices.
+        ```python
+        import seaborn as sns
+        corr = pokemon.corr()
+        sns.heatmap(corr, annot=True)
+        plt.show()
+        ```
+
+    * **plotly**  
+        Used for interactive visualizations.
+        ```python
+        import plotly.express as px
+        fig = px.bar(pokemon, x='Name', y='Total', color='Type 1')
+        fig.show()
+        ```
+
+    * **scikit-learn**  
+        Used for machine learning models and evaluation.
+        ```python
+        from sklearn.model_selection import train_test_split
+        from sklearn.ensemble import RandomForestClassifier
+
+        X = combined[['HP', 'Attack', 'Defense', 'Speed']]
+        y = combined['Winner']
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+        model = RandomForestClassifier()
+        model.fit(X_train, y_train)
+        ```
 
 ## Credits 
 
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-### Content 
+Links:
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+* https://www.pokemon.com/us/pokedex
+* https://pokemondb.net/pokedex
+* https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number
 
-### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
 
 
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* I would like to thank my daughter and husband for their support through this project. Also Vasi, Niel and Emma at Code Institute for their support through the Hackethon.
