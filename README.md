@@ -170,14 +170,34 @@ The business requirements for this project are:
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
+
+    * Page 1 - "Scoreboard Overview", 
+        "Text box"- used for heading
+        "Line and stacked column chart" - "Leading Pokemon Scoreboard of Player 1" 
+        "Cards" were used to show the Result, Number of Rounds, Player 1 Total, Player 2 Total, Attch Score: Player 1 and Attack score: Player 2, Defense Score: Player 1, Defense Score: Player 2. Donut Pie charts were used for Player 1 and Player 2 Scores. "Stacked Bar Chart" was used for the highest attacking Score by Player 1.
+
+    * Page 2 - "Player strategy", 
+        A "Scatter Chart" was used for the graphic "Higher Attack from Player 1 mostly results in a Win" and "Line Charts" were used for "How players used their Special Defense Power"
+
+    * Page 3 - "Player 1 Statistics", "Stacked Bar chart" was used for the "Fasterst Pokemon group for Player 1" and "Highest Hit for Player 1", a "donut piechart" was used for "Player 1 First Special Attack by Group" and a "Line Chart" for "Highest defense Pokemon for Player 1"
+
+    * Page 4 - "Player 2 Statistics", "Stacked Column Chart" was used for the "Leading Pokemon Scoreboard of Player 2", "Stacked Bar Charts" was used for "Highest Hit for Player 2" and "Attack Power of Player 2" and a "donut pie chart" used for graphic "Player 2 First Special Attack by Group".
+
+    * Page 5 - "Predictive Model", "Decomposition tree" was used to create the Predictive model.
+
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?
+    * For the non-technical audience, the Pokemon Dashboard was created and for the technical audience the Jupyter notebooks were created.
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+    * The Dashboard has a more interactive platform that allows the user/ non-technical audience to play around and understand what happens when certain buttons are clicked or graphs are selected.
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
+    * Yes, I had to learn how to combine tables in a way that it represents the results of both players. A left join was used twice to perform this action. Also using a tournament dataset is new to me, the structure is different to environmental science datasets.
+    * The bug on venv was solved by always selecting the local branch for the python kernal and not the global branch
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+    * Niel assisted me with my initial bug and I fixed it by selecting the local pathway for the venv file.
 
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
