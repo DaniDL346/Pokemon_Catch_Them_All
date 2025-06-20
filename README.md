@@ -61,14 +61,26 @@ The business requirements for this project are:
     ![Dashboard page 4](static_images/Dashboard_page4.jpeg)
 
 3. **Player Performance Comparison:** Compare the performance of the two players in the tournament based on their chosen Pokemon and battle results.
+    * The Pokemon Dashboard has a comparison of the statistics between the two players. The overview page, gives a brief overview of how many wins and losses both players achieved. The "Player Strategy" and "Player 1 Statistics" and "Player 2 Statistics" give an indepth view on how each player performed.
+
 4. **Visualize Key Stats:** Provide clear visualizations of important attributes such as HP, Attack, Defense, Speed, and their impact on battle outcomes.
+    * The Pokemon Dashboard provides information on pages 3 and 4 of the Dashboard indicating this important information for each player.
+
 5. **Predict Battle Outcomes:** Use the dataset to build simple predictive models or rules to forecast the winner of a match based on Pokemon stats and types.
+    * This section is answered in page 5 of the Pokemon Dashboard named "Predictive Model". It can be used to make forecasts and predict who will be the winner based on Pokemon types and characteristics.
+
 6. **User-Friendly Insights:** Present findings in a way that is accessible to both technical and non-technical users, supporting decision-making for future tournaments.
+    * The Jupyter notebooks named "ETL_Postprocessing and Visualisations", "Statistical_testing" and "Machine_learning_model" are for the technical audience and the Pokemon Dashboard is for a non-technical audience.
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
+    * ETL - This section was used to extract, clean, transform and load the two datasets - "pokemon.csv" and "combats.csv".
+    * ETL Post-processing and Visualisations - This section was used to create advanced visualisations based on the "pokemon_cleaned.csv". This section was used to join two tables to create the "combined_ml.csv" which is for the battle information on player 1 and player 2. This dataset was fed into the Machine Learning Model.
+    * Statistical Testing - This provided more insights into the various data distributions if they were significantly different or not.
+    * Machine Learning Model - In this notebook, a Grid Search CV method was used to compare the best Machine Learning Model that a prediction could be made on that provides the highest accuracy. In this section, the Hyperparameters were also adjusted to increase the accuraxy of the Machine learning Model.
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
 * Why did you choose the research methodologies you used?
+
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
