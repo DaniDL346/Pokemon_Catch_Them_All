@@ -185,6 +185,8 @@ The business requirements for this project are:
 
     * Page 5 - "Predictive Model", "Decomposition tree" was used to create the Predictive model.
 
+    ![Dashboard page 5](static_images/Dashboard_page5.jpeg)
+
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?
     * For the non-technical audience, the Pokemon Dashboard was created and for the technical audience the Jupyter notebooks were created.
